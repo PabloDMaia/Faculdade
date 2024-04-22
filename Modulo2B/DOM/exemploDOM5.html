@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento do DOM Exemplo 5</title>
+</head>
+<body>
+    <ul id="lista">
+        <li>Produtos</li>
+    </ul>
+
+    <ul id="listaPersona">
+
+    </ul>
+</body>
+<script>
+    var elemento = document.createElement("div");
+    elemento.innerText = "Incluindo texto na div";
+    elemento.style.backgroundColor = "lightgreen";
+    document.body.append(elemento);
+
+    var lista = document.getElementById("lista");
+    var li = document.createElement("li");
+    li.textContent = "Quem somos";
+    lista.appendChild(li);
+
+    personas = ["Arsène", "Satanael", "Raoul", "Izanagi no Okami"]
+
+    var listadePersonas = document.querySelector('ul#listaPersona')
+    for(var i = 0; i < personas.length; i++){
+        var persona = personas[i];
+        var listitem = document.createElement("li");
+        listitem.innerText = persona;
+        listitem.style.border = "3px solid black"
+        listitem.style.backgroundColor = "red"
+        listitem.style.color = "white"
+        listadePersonas.appendChild(listitem);
+
+
+    }
+ 
+</script>
+</html>

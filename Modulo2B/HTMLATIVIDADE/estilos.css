@@ -1,0 +1,26 @@
+body{
+    background-color: crimson;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.corpoDoTexto {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    
+}
+
+.corpoDoTexto2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
